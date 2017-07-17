@@ -1,13 +1,69 @@
 .container {
   width: 961px;
+  position: relative;
 }
-.tutorial{
+
+.tutorial {
   position: absolute;
   z-index: 99999;
 }
-.tutorial img{
-     width: 100%;
+
+.cftutorial {
+  z-index: 99999;
+  left: 0;
+  right: 0;
+  height: 100%;
+  position: absolute;
 }
+
+.cftutorialbg {
+  background: #000;
+  opacity: .7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cf-card {
+  position: absolute;
+  background: #fff;
+  width: 550px;
+  margin: 0 auto;
+  left: 200px;
+  top: 25%;
+  padding: 25px;
+  padding-bottom: 50px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.cf-card h1 {
+  color: #03a20c;
+  font-size: 1.6em;
+  margin-bottom: 25px;
+}
+
+.tutorial .btn-close {
+  color: #000;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  font-size: 1.8em;
+  text-align: center;
+  line-height: 40px;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.tutorial img {
+  width: 100%;
+}
+
 .br {
   border-right: 1px #ddd solid;
 }

@@ -23,11 +23,35 @@
 
 <body>
   <div class="container">
-    <!-- <div class="tutorial">
-      <div class="row">
-        <img src="css/images/tutorial1.jpg" />
+
+    <!-- tutorial -->
+
+    <div class="cftutorial">
+      <div class="cftutorialbg"></div>
+      <div class="cf-card">
+        <h1>ท่านต้องการระบบช่วยสอนหน้าเว็บไซต์ หรือไม่?</h1>
+        <div class="row">
+          <div class="col-xs-6">
+            <button class="btn btn-lg btn-block btn-default" id="entertutorial">ต้องการ</button>
+          </div>
+          <div class="col-xs-6">
+            <button class="btn btn-lg btn-block btn-default" id="exittutorial">ไม่ต้องการ</button>
+          </div>
+        </div>
       </div>
-    </div> -->
+    </div>
+    <div class="tutorial">
+      <div class="btn-close">
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="row">
+        <img />
+      </div>
+    </div>
+
+    <!-- end tutorial -->
+
+    
     <div class="row">
       <div class="top-info">
         <div class="col-xs-6 nopadding">
@@ -363,6 +387,41 @@
         }
       });
       // end custinfo
+
+
+      // tutorial
+      $('.tutorial').hide();
+      var tutorialimg = [{ src: 'css/images/tutorial1.jpg' }, { src: 'css/images/tutorial2.jpg' }, { src: 'css/images/tutorial3.jpg' }, { src: 'css/images/tutorial4.jpg' }];
+      var currenttotorialindex = 0;
+      $('.tutorial img').attr('src', tutorialimg[currenttotorialindex].src);
+      currenttotorialindex++;
+      $('.btn-close').click(function () {
+        $('.tutorial').hide();
+      });
+
+      $('.tutorial').click(function () {
+        if (currenttotorialindex < tutorialimg.length) {
+          $('.tutorial img').attr('src', tutorialimg[currenttotorialindex].src);
+        }
+        else {
+          $('.tutorial').hide();
+        }
+        currenttotorialindex++;
+      });
+
+
+      $('#entertutorial').click(function () {
+        $('.cftutorial').hide();
+        $('.tutorial').show();
+      });
+
+      $('#exittutorial').click(function () {
+        $('.cftutorial').hide();
+        $('.tutorial').hide();
+      });
+      // endtutorial
+
+
 
     });
   </script>
