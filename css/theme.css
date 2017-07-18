@@ -191,9 +191,12 @@
   z-index: 100;
 }
 
+.menu ul li ul.r {
+  right: 0;
+}
+
 .menu ul li ul li {
-  background: #828282;
-  opacity: .8;
+  background-color: rgba(11, 13, 15, 0.7);
   width: 250px;
   position: relative;
 }
@@ -209,7 +212,7 @@
   height: 1px;
   left: 10px;
   right: 10px;
-  background: #8e8e8e;
+  background: rgba(11, 13, 15, 0.4);
 }
 
 .menu ul li ul li a {
@@ -218,7 +221,7 @@
 }
 
 .menu ul li ul li a:hover {
-  background: #949494;
+  background-color: rgb(60, 181, 75, .5);
 }
 
 .silde-containner {
@@ -434,6 +437,7 @@
   float: left;
   position: absolute;
   left: 0;
+  font-size: 14px;
 }
 
 .flow-text .message {
@@ -489,10 +493,11 @@
 }
 
 .silde-containner .right {
+  background: url(../images/banner/volumn.jpg) no-repeat left;
+  background-size: 100%;
   float: left;
   width: 411px;
   height: 100%;
-  background: #fff;
 }
 
 .silde-containner .right img {
@@ -526,6 +531,10 @@
   width: 200px;
   bottom: 40px;
   right: 10px;
+}
+
+.silde-containner .right .bx-wrapper {
+  background: transparent;
 }
 
 .silde-containner .right .bx-wrapper .bx-pager {
@@ -569,7 +578,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 1.4em;
+  font-size: 1em;
   padding: 0px;
   margin: 0px;
   font-weight: 100;
@@ -579,7 +588,7 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  font-size: 1.4em;
+  font-size: 1em;
   padding: 0px;
   margin: 0px;
   font-weight: 100;
