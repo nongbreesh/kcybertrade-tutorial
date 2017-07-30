@@ -46,11 +46,9 @@
 }
 
 .tutorial .btn-close {
-  color: #000;
-  background: #fff;
+  color: #fff;
   width: 40px;
   height: 40px;
-  border-radius: 20px;
   position: absolute;
   font-size: 1.8em;
   text-align: center;
@@ -151,7 +149,7 @@
 }
 
 .menu ul li:before {
-  background: #9e9e9e;
+  background: #e4e4e4;
   content: ' ';
   position: absolute;
   right: 0;
@@ -197,7 +195,7 @@
 
 .menu ul li ul li {
   background-color: rgba(11, 13, 15, 0.7);
-  width: 250px;
+  width: 230px;
   position: relative;
 }
 
@@ -234,36 +232,51 @@
 .banner-containner {
   background: #f5f6f8;
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .body-containner {
   background: #f5f6f8;
   display: block;
-  margin-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 0px;
+  padding-bottom: 5px;
 }
 
 .footer-containner {
-  background: url(images/footer.jpg);
-  background-size: 100%;
+  padding-top: 15px;
   display: block;
   height: 150px;
   margin-top: 15px;
+  text-align: center;
+  color: #817b7d;
+}
+
+.footer-containner h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #96857b;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0px;
+}
+
+.footer-containner a {
+  color: #000 !important;
+  text-decoration: underline;
 }
 
 .body-row-1 {
   width: 28%;
   display: block;
   float: left;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .body-row-1 .img {
   width: 100%;
   height: 105px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .body-row-1 .img img {
@@ -274,21 +287,21 @@
   width: 42.5%;
   display: block;
   float: left;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .body-row-3 {
   width: 28%;
   display: block;
   float: left;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .list-card {
-  margin-top: -5px;
+  margin-top: -10px;
   background: #fff;
   width: 100%;
-  height: 220px;
+  height: 210px;
   position: relative;
 }
 
@@ -350,10 +363,9 @@
 }
 
 .list-footermenu-card {
-  background: #fff;
   width: 100%;
   height: 100px;
-  margin-top: 15px;
+  margin-top: 10px;
   height: 215px;
 }
 
@@ -365,13 +377,12 @@
 
 .list-footermenu-card ul li {
   background: #3cb54b;
-  border-bottom: 3px solid #fff;
   position: relative;
 }
 
 .list-footermenu-card ul li a {
   display: block;
-  padding: 11.2px;
+  padding: 10px;
   padding-left: 30px;
   color: #fff;
   font-size: 1.5em;
@@ -398,7 +409,7 @@
 }
 
 .banner-slide hr {
-  border: 10px #fff solid;
+  border: 5px #fff solid;
 }
 
 .banner-slide .img {
@@ -421,8 +432,7 @@
 .flow-text {
   height: 40px;
   background: #ebecee;
-  font-size: 1.3em;
-  line-height: 2.3em;
+  line-height: 2.8em;
   position: relative;
 }
 
@@ -437,6 +447,7 @@
   float: left;
   position: absolute;
   left: 0;
+  padding-top: 2px;
   font-size: 14px;
 }
 
@@ -492,16 +503,75 @@
   background: #fff;
 }
 
-.silde-containner .right {
-  background: url(../images/banner/volumn.jpg) no-repeat left;
+.silde-containner .right { 
   background-size: 100%;
   float: left;
   width: 411px;
   height: 100%;
+  position: relative;
 }
 
 .silde-containner .right img {
   width: 411px !important;
+}
+
+.silde-containner .right .data {
+  position: relative;
+}
+
+.silde-containner .right .data h1.setindex {
+  position: absolute;
+  color: #fff;
+  top: -6px;
+  left: 10px;
+  font-size: 30px;
+}
+
+.silde-containner .right .data h1.datavolumn {
+  position: absolute;
+  color: #fff;
+  top: 33px;
+  left: 12px;
+}
+
+.silde-containner .right .data h1.datavolumnchange {
+  position: absolute;
+  color: #3cb54b;
+  top: 36px;
+  left: 187px;
+}
+
+.silde-containner .right .data h4.v1 {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  top: 111px;
+  left: 11px;
+  font-size: 14px;
+}
+
+.silde-containner .right .data h4.v2 {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  top: 137px;
+  left: 11px;
+  font-size: 14px;
+}
+
+.silde-containner .right .data h5.status {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.silde-containner .right .data h5.datetime {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  top: 121px;
+  right: 8px;
+  font-size: 14px;
+  text-align: right;
 }
 
 .silde-containner .left .bx-has-pager {
@@ -604,4 +674,8 @@
   position: absolute;
   bottom: -3px;
   right: 100px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: rgba(102, 102, 102, 0.41);
 }
