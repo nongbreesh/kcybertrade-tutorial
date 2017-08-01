@@ -60,6 +60,7 @@
 
 .tutorial img {
   width: 100%;
+  cursor: pointer;
 }
 
 .br {
@@ -487,8 +488,8 @@
 }
 
 .bx-wrapper .bx-next {
-  right: 0px;
-  background: url(images/next.png) no-repeat;
+  right: 10px;
+  background: url(images/next.png) no-repeat right;
   background-size: 50%;
 }
 
